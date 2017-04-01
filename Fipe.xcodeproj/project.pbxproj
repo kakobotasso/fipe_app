@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73C5D3D160EB3D77848F6550 /* Pods_Fipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4544FC13CF71860918A6EC46 /* Pods_Fipe.framework */; };
 		85CE80441E9018A700391BA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE80431E9018A700391BA9 /* AppDelegate.swift */; };
 		85CE80461E9018A800391BA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE80451E9018A800391BA9 /* ViewController.swift */; };
 		85CE80491E9018A800391BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CE80471E9018A800391BA9 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4544FC13CF71860918A6EC46 /* Pods_Fipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4932A4E5BB2FFBC926B42856 /* Pods-Fipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fipe/Pods-Fipe.release.xcconfig"; sourceTree = "<group>"; };
 		85CE80401E9018A500391BA9 /* Fipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CE80431E9018A700391BA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85CE80451E9018A800391BA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		85CE804A1E9018A900391BA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85CE804D1E9018A900391BA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85CE804F1E9018A900391BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		915E4ED6CF4505D226B39B83 /* Pods-Fipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fipe/Pods-Fipe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C5D3D160EB3D77848F6550 /* Pods_Fipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDEBC5097B4E7C39AE2F53D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				915E4ED6CF4505D226B39B83 /* Pods-Fipe.debug.xcconfig */,
+				4932A4E5BB2FFBC926B42856 /* Pods-Fipe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71900ABBA5AFFF6EEB8B1C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4544FC13CF71860918A6EC46 /* Pods_Fipe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85CE80371E90189F00391BA9 = {
 			isa = PBXGroup;
 			children = (
 				85CE80421E9018A500391BA9 /* Fipe */,
 				85CE80411E9018A500391BA9 /* Products */,
+				3BDEBC5097B4E7C39AE2F53D /* Pods */,
+				71900ABBA5AFFF6EEB8B1C1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85CE80521E9018A900391BA9 /* Build configuration list for PBXNativeTarget "Fipe" */;
 			buildPhases = (
+				F5A3FF033FB40C7C48865F09 /* [CP] Check Pods Manifest.lock */,
 				85CE803C1E9018A000391BA9 /* Sources */,
 				85CE803D1E9018A000391BA9 /* Frameworks */,
 				85CE803E1E9018A000391BA9 /* Resources */,
+				A322044021EDA6AF8DCF24C9 /* [CP] Embed Pods Frameworks */,
+				7CF07847436F87500BB7E2D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CF07847436F87500BB7E2D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fipe/Pods-Fipe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A322044021EDA6AF8DCF24C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fipe/Pods-Fipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A3FF033FB40C7C48865F09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85CE803C1E9018A000391BA9 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		85CE80531E9018A900391BA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915E4ED6CF4505D226B39B83 /* Pods-Fipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fipe/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		85CE80541E9018A900391BA9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4932A4E5BB2FFBC926B42856 /* Pods-Fipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fipe/Info.plist;
